@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="521.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RAIDController">
+   <children>
+      <Button fx:id="fread" layoutX="257.0" layoutY="241.0" mnemonicParsing="false" onAction="#ReadFile" prefHeight="38.0" prefWidth="83.0" text="读文件">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Text layoutX="100.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RAID">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="fwrite" layoutX="158.0" layoutY="240.0" mnemonicParsing="false" onAction="#WriteFile" prefHeight="38.0" prefWidth="83.0" text="写文件">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="inputFName" layoutX="157.0" layoutY="84.0" prefHeight="30.0" prefWidth="373.0" />
+      <Text layoutX="22.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="输入文件名：">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="输入文件内容：">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="inputFContent" layoutX="157.0" layoutY="126.0" prefHeight="108.0" prefWidth="373.0" />
+      <Text layoutX="24.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="输出: ">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="RAIDnum" layoutX="171.0" layoutY="17.0" prefHeight="35.0" prefWidth="53.0" />
+      <Button fx:id="fdelete" layoutX="347.0" layoutY="244.0" mnemonicParsing="false" onAction="#DeleteFile" text="删除文件" />
+      <Button fx:id="setBad" layoutX="421.0" layoutY="16.0" mnemonicParsing="false" onAction="#SetBad" text="设置坏磁盘" />
+      <Button fx:id="newRAID" layoutX="229.0" layoutY="16.0" mnemonicParsing="false" onAction="#NewRAID" text="确定" />
+      <TextField fx:id="Badnum" layoutX="375.0" layoutY="17.0" prefHeight="35.0" prefWidth="46.0" />
+      <Button fx:id="begin" layoutX="13.0" layoutY="17.0" mnemonicParsing="false" onAction="#Begin" text="初始化" />
+      <Button fx:id="check" layoutX="449.0" layoutY="242.0" mnemonicParsing="false" onAction="#Check" prefHeight="35.0" prefWidth="83.0" text="修复" />
+      <TextField fx:id="outputFContent" layoutX="157.0" layoutY="293.0" prefHeight="205.0" prefWidth="373.0" />
+   </children>
+</AnchorPane>
